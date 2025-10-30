@@ -33,6 +33,7 @@ const SCRIPTS = {
   "lint:fix": "eslint . --fix",
   format: "prettier --write .",
   "format:check": "prettier --check .",
+  typecheck: "tsc --noEmit",
 };
 
 const ENGINES = {
@@ -221,7 +222,8 @@ async function main(): Promise<void> {
     console.log(`  ${pm} run lint          Check for linting errors`);
     console.log(`  ${pm} run lint:fix      Fix linting errors`);
     console.log(`  ${pm} run format        Format code with Prettier`);
-    console.log(`  ${pm} run format:check  Check formatting\n`);
+    console.log(`  ${pm} run format:check  Check formatting`);
+    console.log(`  ${pm} run typecheck     Check TypeScript types\n`);
   }
 }
 
