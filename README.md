@@ -38,7 +38,6 @@ pnpm dlx create-stern-config
 The CLI will guide you through:
 
 1. Selecting configuration files to create:
-
    - ESLint configuration (`eslint.config.js`)
    - Prettier configuration (`prettier.config.js`)
    - Prettier ignore file (`.prettierignore`)
@@ -125,14 +124,14 @@ All generated files can be customized after creation. The configurations are des
 ### Extending ESLint
 
 ```javascript
-import { createBaseConfig } from "./eslint.config.js";
+import { createBaseConfig } from './eslint.config.js';
 
 export default [
   ...createBaseConfig(import.meta.dirname),
   {
     rules: {
       // Your custom rules
-      "no-console": "off",
+      'no-console': 'off',
     },
   },
 ];
@@ -141,7 +140,7 @@ export default [
 ### Extending Prettier
 
 ```javascript
-import baseConfig from "./prettier.config.js";
+import baseConfig from './prettier.config.js';
 
 export default {
   ...baseConfig,

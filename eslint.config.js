@@ -50,6 +50,8 @@ export default [
       'jsdoc/require-param': 'warn',
       'jsdoc/require-returns': 'warn',
       'n/no-unpublished-import': 'off',
+      'n/hashbang': 'off',
+      'n/no-process-exit': 'off',
     },
   },
 
@@ -80,7 +82,7 @@ export default [
         },
       ],
       complexity: ['warn', 10],
-      'no-console': 'warn',
+      'no-console': 'off',
 
       // Stricter Typing & Code Style
       '@typescript-eslint/no-explicit-any': 'error',
