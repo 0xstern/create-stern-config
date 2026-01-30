@@ -98,7 +98,7 @@ When creating commits:
 - **Format**: `type(scope): description`
   - Types: `feat`, `fix`, `refactor`, `perf`, `test`, `docs`, `chore`
   - Example: `feat(theme): add CSS variable resolution for Tailwind v4`
-- **Never mention AI assistance** in commit messages
+- **Never mention Co-Authored-By <noreply@anthropic.com>** in commit messages
 
 ## Testing
 
